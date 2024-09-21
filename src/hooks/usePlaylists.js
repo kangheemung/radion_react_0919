@@ -1,11 +1,9 @@
-// Assuming you are using Axios for making HTTP requests
-
 import { useQuery } from "@tanstack/react-query";
 import api from '../utils/api';
 
-const fetchMusicNewReleasest = async () => {
+const fetchPlaylist= async () => {
     try {
-        const response = await api.get('/browse/new-releases', {
+        const response = await api.get('/browse/featured-playlists', {
             params: {
                 limit: 10,
                 market: 'KR',
@@ -16,16 +14,16 @@ const fetchMusicNewReleasest = async () => {
                 // Add any other required parameters here
             },
         });
-
+        // console.log("ddd", response.data); // Move this line above the return statement
         return response.data;
     } catch (error) {
-        throw new Error('Failed to new-releases music');
+        throw new Error('Failed to fetch popular music');
     }
 };
 
-export const useMusicNewReleasestQuery = () => {
+export const usePlaylistQuery = () => {
     return useQuery({
-        queryKey: ['MusicNewReleases'],
-        queryFn: fetchMusicNewReleasest,
+        queryKey: ['Music-Playlist'],
+        queryFn: fetchPlaylist
     });
-};
+};s
