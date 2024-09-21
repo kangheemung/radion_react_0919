@@ -9,7 +9,7 @@ import AppLayout from "./layout/AppLayout";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import AlbumDetailPage from "./pages/AlbumDetailPage/AlbumDetailPage";
 import TrackDetailPage from "./pages/TrackDetailPage/TrackDetailPage";
-import MusicPlayer from "./common/MusicPlayer/MusicPlayer";
+//import MusicPlayer from "./common/MusicPlayer/MusicPlayer";
 import { UserContextProvider } from "./context/UserContext";
 import PlayListPage from "./pages/PlayListPage/PlayListPage.jsx";
 import TrackListPage from "./pages/TrackListPage/TrackListPage.jsx";

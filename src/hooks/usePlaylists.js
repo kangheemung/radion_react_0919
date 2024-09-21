@@ -26,4 +26,4 @@ export const usePlaylistQuery = () => {
         queryKey: ['Music-Playlist'],
         queryFn: fetchPlaylist
     });
-};s
+};
