@@ -11,9 +11,9 @@ import AlbumDetailPage from "./pages/AlbumDetailPage/AlbumDetailPage";
 import TrackDetailPage from "./pages/TrackDetailPage/TrackDetailPage";
 //import MusicPlayer from "./common/MusicPlayer/MusicPlayer";
 import { UserContextProvider } from "./context/UserContext";
-import PlayListPage from "./pages/PlayListPage/PlayListPage.jsx";
-import TrackListPage from "./pages/TrackListPage/TrackListPage.jsx";
-import ArtistDetailPage from "./pages/ArtistDetailPage/ArtistDetailPage.jsx";
+import PlayListPage from "./pages/PlayListPage/PlayListPage.js";
+import TrackListPage from "./pages/TrackListPage/TrackListPage.js";
+import ArtistDetailPage from "./pages/ArtistDetailPage/ArtistDetailPage.js";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
