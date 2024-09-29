@@ -1,14 +1,14 @@
 import { useQuery } from "@tanstack/react-query"
 import api from '../utils/api';
 
-const fetchArtistDetail=({id})=>{
-  return api.get(`/artists/${id}`);
+const fetchArtistList=({ids})=>{
+  return api.get(`/artists?ids=${ids}`);
 }
 
-export const useArtistDetailQuery=({id}) => {
+export const useArtistListQuery=({ids}) => {
   return useQuery({
-    queryKey:['artist-detail', {id}],
-    queryFn: () => fetchArtistDetail({id}),
-    select:(result)=>result.data,
+    queryKey:['artist-list', {ids}],
+    queryFn: () => fetchArtistList({ids}),
+    select:(result)=>result.data.artists,
   })
 }

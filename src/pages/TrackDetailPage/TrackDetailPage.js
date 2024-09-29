@@ -128,6 +128,7 @@ const TrackDetailPage = () => {
         className="trackdetailpage_modal"
       >
         <Modal.Header closeButton className="trackdetailpage_modal_header">
+          
         </Modal.Header>
         <Modal.Body className="trackdetailpage_modal_body">
           <img src={track?.album.images[0].url} alt="" />

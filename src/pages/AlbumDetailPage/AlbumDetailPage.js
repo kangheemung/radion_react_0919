@@ -102,7 +102,6 @@ const AlbumDetailPage = () => {
         <Row><div className="mt-5"><span className="albumdetailpage_more_albums" onClick={(event) => toArtistDetailPage(artistId,event)}>Watch more of {artistName}'s songs</span></div></Row>
         <Row>
           <TrackBox data={artistAlbum?.items}/>
-          
         </Row>
 
 

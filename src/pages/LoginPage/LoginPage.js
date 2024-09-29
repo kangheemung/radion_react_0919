@@ -6,7 +6,7 @@ import { useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
 import { UserContext } from "../../context/UserContext";
 import { useNavigate } from "react-router-dom";
-import radionLogo from "../../assets/radion_logo.png";
+// import radionLogo from "../../assets/radion_logo.png";
 
 const Login = () => {
   // 사용자 정보 상태
